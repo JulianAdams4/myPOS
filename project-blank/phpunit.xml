@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="true">
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+        <testsuite name="Browser Tests">
+            <directory suffix="Test.php">./tests/Browser</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./app</directory>
+        </whitelist>
+    </filter>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="QUEUE_DRIVER" value="sync"/>
+        <env name="DB_CONNECTION" value="testing"/>
+        <env name="TELESCOPE_ENABLED" value="false"/>
+    </php>
+    <!-- <logging>
+        <log type="coverage-html"
+             target="tests/coverage/html"
+             showUncoveredFiles="true"
+             lowUpperBound="60"
+             highLowerBound="95" />
+        <log type="coverage-clover"
+             target="tests/coverage/clover.xml"
+             showUncoveredFiles="true" />
+        <log type="coverage-php"
+             target="tests/coverage/coverage.serialized"
+             showUncoveredFiles="true" />
+        <log type="coverage-text"
+             target="php://stdout"
+             showUncoveredFiles="true" />
+        <log type="testdox-html" target="tests/coverage/testdox.html" />
+        <log type="testdox-text" target="php://stdout" />
+    </logging> -->
+</phpunit>

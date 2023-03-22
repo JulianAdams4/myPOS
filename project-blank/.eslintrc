@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+		"react",
+		"import"
+	  ],
+	"extends": ["airbnb",
+		"plugin:react/recommended",
+		"plugin:import/react",
+		"plugin:import/recommended"
+  ],
+	"rules": {
+	  "comma-dangle": 0,
+	  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+	  "no-mixed-spaces-and-tabs": ["error", "smart-tabs"]
+	},
+	  "settings": {
+		"import/resolver": {
+		  "node": {
+			"extensions": [
+			  ".js",
+			  ".jsx"
+			]
+		  }
+		}
+	  }
+  }

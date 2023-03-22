@@ -1,0 +1,41 @@
+// Here you can add other styles
+
+
+@media only screen and (max-width: 576px) { 
+    .hide-xs { 
+        display: none !important;
+    } 
+    .space-bottom-xs { 
+        margin-bottom: 8px !important;
+    }
+    .align-center-xs { 
+        text-align: center !important;
+    }
+}
+@media only screen and (max-width: 768px) { 
+    .hide-sm { 
+        display: none !important;
+    }
+    .space-bottom-sm { 
+        margin-bottom: 8px !important;
+    } 
+    .align-center-sm { 
+        text-align: center !important;
+    }
+}
+@media only screen and (max-width: 992px) { 
+    .hide-md { 
+        display: none !important;
+    }
+    .space-bottom-md { 
+        margin-bottom: 8px !important;
+    } 
+}
+@media only screen and (max-width: 1200px) { 
+    .hide-lg { 
+        display: none !important;
+    }
+    .space-bottom-lg { 
+        margin-bottom: 8px !important;
+    } 
+}

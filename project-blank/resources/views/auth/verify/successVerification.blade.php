@@ -1,0 +1,19 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Verificaci&oacute;n de Email') }}</div>
+                <div class="card-body">
+                	<h2>Bienvenido {{$name}}</h2>
+					<br/>
+					Tu cuenta ha sido verificada con &eacute;xito.
+					<br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection

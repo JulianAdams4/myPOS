@@ -1,0 +1,4 @@
+{
+    "plugins": ["transform-class-properties", "syntax-dynamic-import"],
+    "presets": ["env", "react"]
+}

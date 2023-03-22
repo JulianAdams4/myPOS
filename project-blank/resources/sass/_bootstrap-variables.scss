@@ -1,0 +1,173 @@
+// Bootstrap overrides
+
+//
+// Color system
+//
+
+$white: #fff;
+$gray-100: #f0f3f5;
+$gray-200: #c2cfd6;
+$gray-300: #a4b7c1;
+$gray-400: #869fac;
+$gray-500: #678898;
+$gray-600: #7a61ac;
+$gray-700: #3e515b;
+$gray-800: #f0f3f5;
+$gray-900: #151b1e;
+$black: #000 !default;
+
+$company-primary: #4b367c;
+$company-primary-dark: #1d0f4f;
+$company-primary-light: #7a61ac;
+
+$company-secondary: #976391;
+$company-secondary-dark: #683763;
+$company-secondary-light: #c891c1;
+
+$blue: #4b367c;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #a30b37;
+$orange: #f8cb00;
+$yellow: #ffc107 !default;
+$green: #4dbd74;
+$teal: #20c997 !default;
+$cyan: #63c2de;
+
+// External Business
+$uber-eats-green: #57B83A;
+$uber-eats-black: #212121;
+$uber-eats-white: #F7F7F7;
+
+$rappi-pink: #FF7175;
+$rappi-black: #333333;
+$rappi-white: #ffffff;
+
+$didi-orange: #FF7C41;
+$didi-black: #333740;
+$didi-white: #F7F7F7;
+
+$datil-gray: #6E7F8B;
+$datil-black: #333333;
+$datil-gray2: #E1E1E1;
+
+$colors: (
+	blue: $blue,
+	indigo: $indigo,
+	purple: $purple,
+	pink: $pink,
+	red: $red,
+	orange: $orange,
+	yellow: $yellow,
+	green: $green,
+	teal: $teal,
+	cyan: $cyan,
+	white: $white,
+	gray: $gray-600,
+	gray-dark: $gray-800
+);
+
+$theme-colors: (
+	primary: $company-primary,
+	secondary: $gray-300,
+	success: $green,
+	info: $company-primary-light,
+	warning: $yellow,
+	danger: $red,
+	light: $gray-100,
+	dark: $gray-800,
+	blue: $blue,
+	indigo: $indigo,
+	purple: $purple,
+	pink: $pink,
+	red: $red,
+	orange: $orange,
+	yellow: $yellow,
+	green: $green,
+	teal: $teal,
+	cyan: $cyan,
+	gray-100: $gray-100,
+	gray-200: $gray-200,
+	gray-300: $gray-300,
+	gray-400: $gray-400,
+	gray-500: $gray-500,
+	gray-600: $gray-600,
+	gray-700: $gray-700,
+	gray-800: $gray-800,
+	gray-900: $gray-900,
+	uber-eats-main: $uber-eats-green,
+	uber-eats-bg: $uber-eats-black,
+	uber-eats-sec: $uber-eats-white,
+	rappi-main: $rappi-pink,
+	rappi-bg: $rappi-white,
+	rappi-sec: $rappi-black,
+	datil-main: $datil-gray,
+	datil-bg: $datil-gray2,
+	datil-sec: $datil-black,
+	didi-main: $didi-orange,
+	didi-bg: $didi-black,
+	didi-sec: $didi-white,
+);
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-transitions: true;
+$enable-rounded: false;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: #e4e5e6;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-size-base: 0.875rem;
+
+// Breadcrumbs
+
+$breadcrumb-bg: #fff;
+$breadcrumb-margin-bottom: 1.5rem;
+
+// Cards
+
+$card-border-color: $gray-200;
+$card-cap-bg: $gray-100;
+
+// Dropdowns
+
+$dropdown-padding-y: 0;
+$dropdown-border-color: $gray-200;
+$dropdown-divider-bg: $gray-100;
+
+// Buttons
+
+$btn-secondary-border: $gray-300;
+
+// Progress bars
+
+$progress-bg: $gray-100;
+
+// Tables
+
+$table-bg-accent: $gray-100;
+$table-bg-hover: $gray-100;
+
+// Forms
+
+$input-group-addon-bg: $gray-100;
+$input-border-color: $gray-200;
+$input-group-addon-border-color: $gray-200;
+
+// Sidebar
+$sidebar-nav-link-color: $company-primary-light !default;
+$sidebar-nav-link-icon-color: $company-primary-light !default;
+
+$sidebar-nav-link-active-color: $company-primary-dark !default;
+$sidebar-nav-link-active-bg: lighten($company-primary-light, 25%) !default;
+$sidebar-nav-link-active-icon-color: $company-primary-dark !default;

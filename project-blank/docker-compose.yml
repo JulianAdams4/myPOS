@@ -1,0 +1,35 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+  mysql:
+    image: mysql:5.7
+    container_name: mypos-mysql
+    env_file:
+     - db.env
+    ports:
+     - 3306:3306
+    volumes:
+     - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+  mypos:
+    build: .
+    image: webapp:tag
+    container_name: mypos-server
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/vendor
+    ports:
+      - 8000:8000
+      - 8888:8888
+      - 6001:6001
+      - 9001:9001
+    depends_on:
+      - mysql
+      - rabbitmq
+volumes:
+  logvolume01: {}

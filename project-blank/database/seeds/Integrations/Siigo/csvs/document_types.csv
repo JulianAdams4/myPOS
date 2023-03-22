@@ -1,0 +1,14 @@
+﻿integration_id;document_code;document_description;integration_name
+8;11;Registro civil;siigo
+8;12;Tarjeta de identidad;siigo
+8;13;Cédula de ciudadanía;siigo
+8;21;Tarjeta de extranjería;siigo
+8;22;Cédula de extranjería;siigo
+8;31;NIT;siigo
+8;41;Pasaporte;siigo
+8;42;Documento de identificación extranjero;siigo
+8;91;NUIP ;siigo
+8;R-00-PN;No obligado a registrarse en el RUT PN;siigo
+8;14;Permiso especial de permanencia PEP;siigo
+8;43;Sin identificación del exterior o para uso definido por la DIAN;siigo
+8;50;NIT de otro país;siigo
